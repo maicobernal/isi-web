@@ -121,11 +121,11 @@
     height: 8rem;
     flex-grow: 1;
     transition: all 1s;
-    /* animation-name: prueba;
+    animation-name: prueba;
     animation-iteration-count: 2;
     animation-timing-function:linear;
     animation-duration: 1.5s;
-    animation-delay:1s; */
+    animation-delay:1s;
 
   }
   
