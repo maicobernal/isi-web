@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Integral de Salud Don Bosco - Gral Roca</title>
+    <meta name="description" content="Les ofrecemos toda la información que necesiten sobre nuestro centro médico, especialidades, horarios, obras sociales, turnos, e información de salud..." />
+	<meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon16.png">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Lato:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body class="grid-container">
+
+
+    <header>
+        <div>
+            <a href="../index.html"> <img class = "header__logo" src="../images/logo.gif"></a> 
+            <h1 class="header__titulo">Instituto Integral de Salud Don Bosco</h1>
+
+            <div class = "navbar">
+                <a href="../index.html">Inicio</a>
+                <a href="institucional.html">Institucional</a>
+                    <div class="navbar__subnav">
+                        <button class="navbar__subnav__button">Especialidades<i class="fa fa-angle-double-down"></i></button>
+                        <div class="navbar__subnav__content">
+                            <a href="especialidades.html#medicos">Cuerpo Médico</a>
+                            <a href="especialidades.html#psico">Salud Mental</a>
+                            <a href="especialidades.html#kine">Kinesiología</a>
+                        </div>                 
+                    </div>
+                    
+                <a href="recetas.html">Recetas y Turnos</a>
+                <a id="right" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+
+    
+    <main>
+        <h2>Contáctenos</h2>
+        <form>
+            <ul>
+                <label for="name">Nombre y apellido:</label>
+                <input type="text" name ="name">
+            </ul>
+            <ul>
+                <label for="email">Email:</label>
+                <input type="text" name ="email">    
+            </ul>        
+            <ul>
+                <label for="phone">Teléfono:</label>
+                <input type="text" name ="phone">
+            </ul>
+            <ul>
+                <label for="tipo">Tipo de consulta:</label>
+                <select name = "tipo"> 
+                    <option value="turno">Turnos</option>
+                    <option value="queja">Quejas y reclamos</option>
+                    <option value="sugerencia">Sugerencias</option>
+                </select>
+            </ul>
+            <ul>
+                <label for="comments">Ingrese su consulta:</label>
+                <input type="text" name ="comments" class="contacto__comentarios">
+            </ul>
+            <ul>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </ul>
+        </form>
+    </main>    
+
+    <aside>
+        <h2>Noticias en salud</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscineg elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </aside>
+
+    <footer>
+        <div class = "flex__footer">
+
+            <div>
+                <h3>Instituto Integral de Salud Don Bosco</h3>
+                <p class="center">Don Bosco 1829 - General Roca - Río Negro</p>
+                <p class="center">Teléfonos 0298 - 4425758 y 0298 - 4448923</p>
+            </div>
+
+            <div>
+                <ul>
+                    <a href="../index.html">Inicio</a>
+                </ul>
+                <ul>
+                    <a href="institucional.html">Institucional</a>
+                </ul>
+            
+                    <a href="especialidades.html">Especialidades</a>
+                </ul>
+                <ul>
+                    <a href="recetas.html">Recetas</a>
+                </ul>
+                <ul>
+                    <a href="contacto.html">Contacto</a>
+                </ul>
+            </div>
+
+            <div>
+                
+                <form>
+                    <label for="newsletter">Suscribase al newsletter:</label>
+                    <input type="text" name ="newsletter">
+                    <input type="submit" value="Suscribirse">
+                </form>
+
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
