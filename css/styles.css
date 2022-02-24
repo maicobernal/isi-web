@@ -11,6 +11,7 @@
 
   body {
     font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
   }
   
   /*Formato texto basico*/
@@ -110,7 +111,7 @@
   /* Formato galeria imágenes */
     /* https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
 
-  ul {
+/*   ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,7 +128,7 @@
     animation-duration: 1.5s;
     animation-delay:1s;
 
-  }
+  } */
   
   li img {
     max-height: 100%;
@@ -218,7 +219,7 @@
     'main aside'
     'footer footer';
   grid-gap: 1rem; 
-  background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
+  /* background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1); */
   padding: 1rem; 
   }
   
@@ -229,7 +230,7 @@
   
 /*Header*/
 .header__titulo {
-    padding: 1.3rem 0rem 1rem 0rem;
+    padding: 1.3rem 0rem 2rem 0rem;
     text-align:center;
     font-family: 'Jura', sans-serif;
     color: #463f3a;
@@ -239,12 +240,17 @@
   }
 
 .header__logo {
-    height: 7.4rem;
+    height: 6rem;
     width: auto;
     float:left;
+    padding-bottom: 1rem;
   }
 
   /* Navigation bar con grids y submenus*/
+
+  .navbar__background {
+    background-color: transparent;
+  }
   
   #navbar {
     overflow: hidden; 
