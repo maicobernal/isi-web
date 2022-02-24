@@ -80,15 +80,38 @@
   
   /*Formato imagenes*/
   
+  @keyframes prueba1{
+    0%{
+      opacity:0.5;
+      border: 0.5rem solid pink;}
+      
+    50%{
+      opacity:0.8;
+      border: 0.8rem solid brown;}
+    100%{
+      opacity:1;
+      border: 0.5rem solid #463f3a;}
+  }
+
   .main__imagen--derecha {
     float:right;
     height:15rem;
     width: auto;
+    margin: 0.8rem 0rem 0rem 0.8rem;
+    animation-name: prueba1;
+    animation-iteration-count: 1;
+    animation-timing-function:linear;
+    animation-duration: 3s;
     border-radius: 1rem;
     border: 0.5rem double #463f3a;
-    margin: 0.8rem 0rem 0rem 0.8rem;
   }
 
+  @keyframes prueba2{
+    0%{opacity:0.5;}
+    50%{opacity:0.8;}
+    100%{opacity:1;}
+  }
+ 
   .main__imagen--small {
     float:right;
     height:9rem;
@@ -96,6 +119,11 @@
     border-radius: 1rem;
     border: 0.5rem double #738290;
     margin: 0.8rem 0rem 0.8rem 0.8rem;
+    animation-name: prueba2;
+    animation-iteration-count: 2;
+    animation-timing-function:linear;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
   }
 
   .main__video{
@@ -105,52 +133,6 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-  }
-
-  /* Formato galeria imágenes */
-    /* https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-  }
-  
-  li {
-    height: 8rem;
-    flex-grow: 1;
-    transition: all 1s;
-    animation-name: prueba;
-    animation-iteration-count: 2;
-    animation-timing-function:linear;
-    animation-duration: 1.5s;
-    animation-delay:1s;
-
-  }
-  
-  li img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-    /* animation: prueba 2s linear 0.5s infinite alternate both; */
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  }
-
-  li img:hover{
-    transform: translate(0.5rem, 0.5rem);
-    border-width: 10px;
-    border-color:#463f3a;
-    /* pendiente overlay */
-  }
-
-
-
-  @keyframes prueba{
-    0%{opacity:0.5;}
-    50%{opacity:0.8;}
-    100%{opacity:1;}
   }
 
   /*Formato formularios*/
