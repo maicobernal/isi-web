@@ -98,6 +98,13 @@
   color: black !important;
 }
 
+/* Make head of dropdown link clickable in navbar */
+/* Also remove data-bs-toogle on html */
+.dropdown:hover .dropdown-menu { 
+  display: block !important;
+}
+
+
 
   /*Formato imagenes*/
   
@@ -361,8 +368,64 @@ caption {
   
 }
 
-  /*Responsive layout celulares medianos o portrait landscape*/
-  @media screen and (max-width: 768px) { 
+
+  /*Responsive layout XS celulares pequeños <576px*/
+  @media screen and (max-width: 575.98px) { 
+    .flex__footer {
+      flex-direction: column;
+      
+    }
+
+    .header__titulo{
+      display: none;
+    }
+
+    .header__banner{
+      justify-content: center;
+    }
+
+    .flex__esp{
+      flex-direction: row;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'header'
+        'main'
+        'aside'
+        'footer';
+      grid-gap: 1rem; 
+      background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
+      padding: 1rem; 
+      }
+
+      .main__video{
+        width: 400px;
+        height: max-content;
+        margin: 0.25rem 2rem 0.25rem 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }  
+
+      .main__imagen--derecha{
+        height: 11rem;
+      }
+
+      .card{
+        margin: 0.25rem 2rem 0.25rem 2rem;
+        height: auto !important;
+      }
+
+      .contacto__margin{
+        margin: 0rem 2rem 0rem 2rem;
+      }
+
+  }
+
+  /*Responsive layout SMALL celulares medianos o portrait landscape*/
+  @media screen and (min-width: 576px) and (max-width: 767.98px) { 
     .flex__footer {
       flex-direction: column;
       
@@ -390,6 +453,61 @@ caption {
         font-size: 2rem; 
         font-weight: bolder;
       }
+
+      .contacto__margin{
+        margin: 0rem 1rem 0rem 1rem;
+      }
       
+      .card{
+        margin: 0.25rem 2rem 0.25rem 2rem;
+        height: auto !important;
+      }
 
   }
+
+    /*Responsive layout MEDIUM para tablets*/
+    @media screen and (min-width: 768px) and (max-width: 991.98px) { 
+      .flex__footer {
+        flex-direction: row;
+        
+      }
+      .flex__esp{
+        flex-direction: row;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          'header'
+          'main'
+          'aside'
+          'footer';
+        grid-gap: 1rem; 
+        background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
+        padding: 1rem; 
+        }
+        .header__titulo {
+          padding: 1.3rem 0rem 1rem 0rem;
+          text-align:center;
+          font-family: 'Jura', sans-serif;
+          color: #463f3a;
+          font-size: 2rem; 
+          font-weight: bolder;
+        }
+  
+        .contacto__margin{
+          margin: 0rem 1rem 0rem 1rem;
+        }
+        
+        .card{
+          margin: 0.25rem 1rem 0.25rem 1rem;
+          height: auto !important;
+        }
+  
+    }
+
+        /*Responsive layout LARGE para desktops*/
+        @media screen and (min-width: 992px) and (max-width: 1199.98px) { 
+
+      
+        }

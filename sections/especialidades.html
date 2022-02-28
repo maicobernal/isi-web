@@ -38,10 +38,10 @@
 
     <header>
         <div class="header__banner">
-            <a href="index.html"> <img class="header__logo" src="../images/logo.gif"></a>
+            <a href="../index.html"> <img class="header__logo" src="../images/logo.gif"></a>
             <h1 class="header__titulo">Instituto Integral de Salud Don Bosco</h1>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -58,7 +58,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" href="especialidades.html"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                id="navbarDropdownMenuLink" role="button" 
                                 aria-expanded="false">
                                 Especialidades
                             </a>
@@ -341,7 +341,7 @@
 
     <aside>
         <h2>Noticias en salud</h2>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-sm-2 g-4">
+        <div class="row row-cols-lg-1 row-cols-md-2 row-cols-sm-2 g-4">
             <div class="col">
                 <div class="card h-100 aside__card">
                     <img src="../images/noticias/noticia__colegio.jpg" class="card-img-top aside__imagen" alt="...">
@@ -368,7 +368,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 aside__card">
+                <div class="card h-100 aside__card d-lg-none">
                     <img src="../images/noticias/noticia__viagra.jpg" class="card-img-top aside__imagen" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Viagra para mujeres</h5>
@@ -379,6 +379,18 @@
                     </div>
                 </div>
             </div>
+            <div class="col ">
+                <div class="card h-100 aside__card d-lg-none">
+                  <img src="../images/noticias/noticia__mate.jpg" class="card-img-top aside__imagen" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Beneficios del mate</h5>
+                    <p class="card-text">Su consumo tiene múltiples beneficios para la salud</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">27-12-21</small>
+                  </div>
+                </div>
+              </div>
         </div>
     </aside>
 
