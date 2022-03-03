@@ -1,0 +1,18 @@
+ /*Formato formularios*/
+  
+  .contacto__comentarios {
+    width: auto;
+    height: 200px;
+    padding: $space-sm;
+  }
+
+  form{
+    text-align: $align-center;
+  }
+
+  .forms__title-formato{
+    font-weight: $text-bold;
+    font-size: $font-p-sm;
+    font-family: $font-type-p;
+    color: $color-dark !important;
+  }

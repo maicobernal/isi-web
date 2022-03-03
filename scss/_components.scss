@@ -1,0 +1,45 @@
+/* Paleta de colores */
+
+$color-text: #463f3a;
+$color-dark: black;
+$color-background: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
+$color-navbar: #c9d6b1;
+$color-aside: #D9E2C8;
+$color-hover: #a1b5d8;
+$color-border-important: #738290;
+$color-border-regular: #463f3a;
+
+/*Tipografia*/
+$font-type-p: 'Lato', sans-serif;
+$font-type-h: 'Jura', sans-serif;
+
+/*Tamaño fuentes*/
+$font-p-sm: 1rem;
+$font-p-md:1.1rem;
+$font-p-lg:1.2rem;
+$font-h-sm:1.2rem;
+$font-h-md: 1.3rem;
+$font-h-lg: 1.5rem;
+$font-h-xl: 2.5rem;
+
+/*Interlineado*/
+$text-interlineado-sm: 1rem;
+$text-interlineado-md: 1.3rem;
+$text-interlineado-lg: 1.5rem;
+
+/*Alineacion cosas*/
+$align-center: center;
+$align-justify: justify;
+
+
+/*Estilos textos*/
+$text-bold: bold;
+$text-bolder: bolder;
+
+/*Espaciado*/
+$space-xxs: 0.25rem;
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 3rem;
+
