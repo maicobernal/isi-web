@@ -6,6 +6,9 @@
 /*Alineacion cosas*/
 /*Estilos textos*/
 /*Espaciado*/
+/*Mixins*/
+/*Border para imagenes*/
+/*Estilos de fuentes - por default tamaño mas chico*/
 /*Basics*/
 * {
   margin: 0;
@@ -20,35 +23,40 @@ body {
   background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1); }
 
 /*Formato texto basico*/
-h2 {
+.h__md {
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: #463f3a;
+  text-align: center;
+  padding: 1rem 0 1rem 0; }
+
+.h__sm {
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
   font-size: 1.3rem;
   color: #463f3a;
   text-align: center;
-  padding: 1rem 0 1rem 0;
-  font-family: "Jura", sans-serif;
-  font-weight: bolder; }
+  padding: 1rem 0 1rem 0; }
 
-h3 {
-  color: #463f3a;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem 0 1rem 0;
-  font-family: "Jura", sans-serif;
-  font-weight: bolder; }
-
-main p {
-  text-align: justify;
+.p__md {
+  font-family: "Lato", sans-serif;
   font-size: 1.1rem;
-  padding: 0 1rem 0 1rem;
-  line-height: 1.3rem; }
-
-aside p {
+  color: #463f3a;
+  line-height: 1.3rem;
   text-align: justify;
-  font-size: 1rem;
   padding: 0 1rem 0 1rem; }
 
-aside h2 {
-  font-size: 1.3rem; }
+.p__sm {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #463f3a;
+  line-height: 1rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem; }
+
+.center {
+  text-align: center; }
 
 /*Grids setteo*/
 header {
@@ -110,7 +118,7 @@ footer {
 
 .nav-link {
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-family: "Lato", sans-serif;
   color: black !important; }
 
@@ -124,16 +132,16 @@ footer {
   float: right;
   height: 15rem;
   width: auto;
-  border-radius: 1rem;
   border: 0.5rem double #463f3a;
+  border-radius: 1rem;
   margin: 0.5rem 0 0.5rem 0.5rem; }
 
 .main__imagen--small {
   float: right;
   height: 9rem;
   width: auto;
-  border-radius: 1rem;
   border: 0.5rem double #738290;
+  border-radius: 1rem;
   margin: 0.5rem 0 0.5rem 0.5rem; }
 
 .main__video {
@@ -294,19 +302,17 @@ input {
 
 /*Responsive layout LARGE para desktops*/
 /*Formato formularios*/
-.contacto__comentarios {
-  width: auto;
-  height: 200px;
-  padding: 1rem; }
-
 form {
   text-align: center; }
 
-.forms__title-formato {
-  font-weight: bold;
-  font-size: 1rem;
+.form-label {
   font-family: "Lato", sans-serif;
-  color: black !important; }
+  font-size: 1rem;
+  color: color-dark !important;
+  line-height: 1rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem;
+  font-weight: bold !important; }
 
 /*Especialistas FlexBox*/
 .flex__esp {
@@ -320,8 +326,6 @@ form {
     margin: 10px;
     padding: 10px;
     text-align: center; }
-  .flex__esp h2 {
-    font-size: 1.3rem; }
 
 /* Carousel Especialistas */
 .carousel__size {
@@ -358,7 +362,7 @@ table {
 caption {
   text-align: center;
   color: #463f3a;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1rem 0 1rem 0;
   font-family: "Lato", sans-serif;
-  font-weight: text-bolder; }
+  font-weight: bolder; }

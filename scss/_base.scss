@@ -1,53 +1,37 @@
 /*Basics*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 15px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: $font-type-p;
-    background-image: $color-background;
-  }
+html {
+  font-size: 15px;
+}
 
-    /*Formato texto basico*/
-    
-    h2 {
-      font-size: $font-h-md;
-      color: $color-text;
-      text-align: $align-center;
-      padding: $space-sm 0 $space-sm 0;
-      font-family: $font-type-h;
-      font-weight: $text-bolder;
-    }
-    
-  
-    h3 {
-      color: $color-text;
-      font-size: $font-h-sm;
-      text-align: $align-center;
-      padding: $space-sm 0 $space-sm 0;
-      font-family: $font-type-h;
-      font-weight: $text-bolder;
-    }
-  
-    main p{
-      text-align: $align-justify;
-      font-size: $font-p-md;
-      padding: 0 $space-sm 0 $space-sm;
-      line-height: 1.3rem;
-    }
-    
-    aside p{
-      text-align: $align-justify;
-      font-size: $font-p-sm;
-      padding: 0 $space-sm 0 $space-sm;
-    }
-  
-    aside h2 {
-      font-size: $font-h-md;
-    }
+body {
+  font-family: $font-type-p;
+  background-image: $color-background;
+}
+
+/*Formato texto basico*/
+
+.h__md {
+  @include title($size:$font-h-md);
+}
+
+.h__sm {
+  @include title;
+}
+
+.p__md {
+  @include text ($size: $font-p-md, $interlineado: 1.3rem);
+}
+
+.p__sm {
+  @include text;
+}
+
+.center{
+  text-align: $align-center;
+}

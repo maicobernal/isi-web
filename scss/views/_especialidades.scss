@@ -12,8 +12,6 @@
     padding: 10px;
     text-align: center;
   }
-  & h2{
-    font-size: $font-h-md; }
   }
   
 
@@ -61,8 +59,8 @@ table{
 caption {
     text-align: $align-center;
     color: $color-text;
-    font-size: $font-h-lg;
+    font-size: $font-h-sm;
     padding: $space-sm 0 $space-sm 0;
     font-family: $font-type-p;
-    font-weight: text-bolder;
+    font-weight: $text-bolder;
   }

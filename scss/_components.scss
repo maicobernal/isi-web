@@ -1,5 +1,4 @@
 /* Paleta de colores */
-
 $color-text: #463f3a;
 $color-dark: black;
 $color-background: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
@@ -17,8 +16,8 @@ $font-type-h: 'Jura', sans-serif;
 $font-p-sm: 1rem;
 $font-p-md:1.1rem;
 $font-p-lg:1.2rem;
-$font-h-sm:1.2rem;
-$font-h-md: 1.3rem;
+$font-h-sm:1.3rem;
+$font-h-md: 1.4rem;
 $font-h-lg: 1.5rem;
 $font-h-xl: 2.5rem;
 
@@ -43,3 +42,30 @@ $space-sm: 1rem;
 $space-md: 2rem;
 $space-lg: 3rem;
 
+/*Mixins*/
+
+/*Border para imagenes*/
+@mixin bordered($color: $color-border-important, $width: $space-xs) {
+    border: $width double $color;
+    border-radius: 1rem;
+    margin: $space-xs 0 $space-xs $space-xs;
+  }
+
+  /*Estilos de fuentes - por default tamaño mas chico*/
+  @mixin title($color: $color-text, $size: $font-h-sm){
+    font-family: $font-type-h;
+    font-weight: $text-bolder;
+    font-size: $size;
+    color: $color;
+    text-align: $align-center;
+    padding: $space-sm 0 $space-sm 0;
+  }
+
+  @mixin text($color: $color-text, $size:$font-p-sm, $interlineado: 1rem){
+    font-family: $font-type-p;
+    font-size: $size;
+    color: $color;
+    line-height: $interlineado;
+    text-align: $align-justify;   
+    padding: 0 $space-sm 0 $space-sm;
+  }

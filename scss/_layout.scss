@@ -89,18 +89,14 @@
     float:right;
     height:15rem;
     width: auto;
-    border-radius: 1rem;
-    border: $space-xs double $color-text;
-    margin: $space-xs 0 $space-xs $space-xs;
+    @include bordered ($color: $color-border-regular)
   }
 
   .main__imagen--small {
     float:right;
     height:9rem;
     width: auto;
-    border-radius: $space-sm;
-    border: $space-xs double $color-border-important;
-    margin: $space-xs 0 $space-xs $space-xs;
+    @include bordered;
   }
 
   .main__video{
