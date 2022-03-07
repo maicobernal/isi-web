@@ -11,25 +11,24 @@
       border: 0.5rem solid #463f3a;}
   }
 
-  .animation1 {
-    animation-name: animation1;
-    animation-iteration-count: 1;
-    animation-timing-function:linear;
-    animation-duration: 2s;
-    border-radius: 1rem;
-    border: 0.5rem double #463f3a;
-  }
-
   @keyframes animation2{
     0%{opacity:0.5;}
     50%{opacity:0.8;}
     100%{opacity:1;}
   }
- 
+
+.animation__base{
+  animation-iteration-count: 1;
+  animation-timing-function:linear;
+  animation-duration: 1.5s;
+}
+
+  .animation1 {
+    @extend .animation__base;
+    animation-name: animation1;
+  }
+
   .animation2 {
+    @extend .animation__base;
     animation-name: animation2;
-    animation-iteration-count: 2;
-    animation-timing-function:linear;
-    animation-duration: 1.5s;
-    animation-delay: 0.2s;
   }
