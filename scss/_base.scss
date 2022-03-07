@@ -1,0 +1,37 @@
+/*Basics*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: $font-type-p;
+  background-image: $color-background;
+}
+
+/*Formato texto basico*/
+
+.h__md {
+  @include title($size:$font-h-md);
+}
+
+.h__sm {
+  @include title;
+}
+
+.p__md {
+  @include text ($size: $font-p-md, $interlineado: 1.3rem);
+}
+
+.p__sm {
+  @include text;
+}
+
+.center{
+  text-align: $align-center;
+}
