@@ -9,6 +9,7 @@
 /*Mixins*/
 /*Border para imagenes*/
 /*Estilos de fuentes - por default tamaño mas chico*/
+/*Map para caption - ejemplo para consigna*/
 /*Basics*/
 * {
   margin: 0;
@@ -392,6 +393,5 @@ caption {
   text-align: center;
   color: #463f3a;
   font-size: 1.3rem;
-  padding: 1rem 0 1rem 0;
   font-family: "Lato", sans-serif;
   font-weight: bolder; }

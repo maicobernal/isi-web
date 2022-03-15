@@ -69,3 +69,14 @@ $space-lg: 3rem;
     text-align: $align-justify;   
     padding: 0 $space-sm 0 $space-sm;
   }
+
+  /*Map para caption - ejemplo para consigna*/
+  $caption-style:(
+    align-center: center,
+    font-h-sm: 1.3rem,
+    color-text: #463f3a,
+    space-sm: 1rem,
+    font-type-p: $font-type-p,
+    text-bolder: bolder,
+  )
+ 
