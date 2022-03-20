@@ -36,19 +36,13 @@
     object-fit: contain;
 }
 
-.carousel-caption {
-  &h5{
+.carousel-caption{
   text-align: $align-center;
   color:white;
   font-weight: $text-bolder !important;
-  text-shadow: 1px 1px 2px $color-text;
+  text-shadow: 2px 2px 3px $color-dark;
 }
-&p{
-  text-align: $align-center;
-  color:white;
-  font-weight: $text-bolder;
-  text-shadow: 1px 1px 2px $color-text;}
-}
+
 
 /*Formato tablas*/
 

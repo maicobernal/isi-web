@@ -187,6 +187,10 @@ input {
   .fa:hover {
     opacity: 0.5; }
 
+.fa-whatsapp {
+  background: #25d366;
+  color: white; }
+
 .fa-facebook {
   background: #3B5998;
   color: white; }
@@ -373,17 +377,11 @@ form {
   max-height: 300px;
   object-fit: contain; }
 
-.carousel-captionh5 {
+.carousel-caption {
   text-align: center;
   color: white;
   font-weight: bolder !important;
-  text-shadow: 1px 1px 2px #463f3a; }
-
-.carousel-captionp {
-  text-align: center;
-  color: white;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px #463f3a; }
+  text-shadow: 2px 2px 3px black; }
 
 /*Formato tablas*/
 table {
