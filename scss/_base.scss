@@ -20,6 +20,11 @@ body {
   @include title($size:$font-h-md);
 }
 
+.h__md--underline {
+  @include title($size:$font-h-md);
+  text-decoration: underline;
+}
+
 .h__sm {
   @include title;
 }
@@ -28,10 +33,34 @@ body {
   @include text ($size: $font-p-md, $interlineado: 1.3rem);
 }
 
+.p__md--strong {
+  @include text ($size: $font-p-md, $interlineado: 1.3rem);
+  font-weight: $text-bolder;
+}
+
+.p__md--italic {
+  @include text ($size: $font-p-md, $interlineado: 1.3rem);
+  font-style: $text-italic;
+}
+
+.p__md--strong_italic {
+  @include text ($size: $font-p-md, $interlineado: 1.3rem);
+  font-weight: $text-bolder;
+  font-style: $text-italic;
+}
+
 .p__sm {
   @include text;
 }
 
 .center{
   text-align: $align-center;
+}
+
+.interlineado-sm{
+  line-height: $text-interlineado-sm;
+}
+
+a:link {
+  color: $color-text;
 }

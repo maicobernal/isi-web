@@ -7,6 +7,9 @@ $color-aside: #D9E2C8;
 $color-hover: #a1b5d8;
 $color-border-important: #738290;
 $color-border-regular: #463f3a;
+$color-button: #219ebc;
+$color-button2: #e63946;
+$color-button3: #7f5539;
 
 /*Tipografia*/
 $font-type-p: 'Lato', sans-serif;
@@ -29,11 +32,13 @@ $text-interlineado-lg: 1.5rem;
 /*Alineacion cosas*/
 $align-center: center;
 $align-justify: justify;
+$align-left: left;
 
 
 /*Estilos textos*/
 $text-bold: bold;
 $text-bolder: bolder;
+$text-italic: italic;
 
 /*Espaciado*/
 $space-xxs: 0.25rem;
@@ -45,9 +50,9 @@ $space-lg: 3rem;
 /*Mixins*/
 
 /*Border para imagenes*/
-@mixin bordered($color: $color-border-important, $width: $space-xs) {
+@mixin bordered($color: $color-border-important, $width: $space-xs, $radius: 1rem) {
     border: $width double $color;
-    border-radius: 1rem;
+    border-radius: $radius;
     margin: $space-xs 0 $space-xs $space-xs;
   }
 

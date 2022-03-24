@@ -70,7 +70,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="recetas.html">Recetas y Turnos</a>
+                            <a class="nav-link" href="recetas.html">Solicitud de Recetas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -143,10 +143,18 @@
                         </tr>
                         <tr>
                             <td>
-                                Psiquiatría
+                                Otorrinolaringología
                             </td>
                             <td>
                                 Dr. Lopez
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Neumonología
+                            </td>
+                            <td>
+                                Dra. Minardi
                             </td>
                         </tr>
                     </tbody>
@@ -272,73 +280,85 @@
             </div>
         </div>
         <h2 class="h__md">Estudios diagnósticos disponibles</h2>
-        <div id="carouselExampleCaptions" class="carousel slide carousel__size" data-bs-ride="carousel" data-bs-wrap="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Cardiología"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Neurología"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Neumonología"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                    aria-label="Urología"></button>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 mx-1">
+                <img src="../images/estudios/cardio.jpg" class="card-img-top cards__estudios--img" alt="...">
+                <div class="card-body center interlineado-sm">
+                    <h3 class="h__md--underline">Cardiología</h3>
+                    <p>Electrocardiograma</p>
+                    <p>Holter de arritmias</p>
+                    <p>Holter de presión</p>
+                    <p>Ergometría</p>
+                    <p>Ecocardiograma doppler</p>
+                    <p>Ecodoppler de vasos de cuello</p>
+                </div>
+              </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../images/estudios/cardio.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Cardiología</h5>
-                        <p>Electrocardiograma</p>
-                        <p>Holter de arritmias</p>
-                        <p>Holter de presión</p>
-                        <p>Ergometría</p>
-                        <p>Ecocardiograma doppler</p>
-                        <p>Ecodoppler de vasos de cuello</p>
-                    </div>
+            <div class="col">
+              <div class="card h-100 mx-1">
+                <img src="../images/estudios/neuro.jpeg" class="card-img-top cards__estudios--img" alt="...">
+                <div class="card-body center interlineado-sm">
+                    <h3 class="h__md--underline">Neurología</h3>
+                    <p>Electroencefalograma (EEG)</p>
+                    <p>Potenciales evocados</p>
+                    <p>Electromiograma (EMG)</p>
+                    <p>Polisomnografía (PSG)</p>
+                    <p>Videonistagmografía</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="../images/estudios/neuro.jpeg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Neurología</h5>
-                        <p>Electroencefalograma (EEG)</p>
-                        <p>Potenciales evocados</p>
-                        <p>Electromiograma (EMG)</p>
-                        <p>Polisomnografía (PSG)</p>
-                        <p>Videonistagmografía</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/estudios/neumo.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Neumonología</h5>
-                        <p>Espirometría</p>
-                        <p>DLCO</p>
-                        <p>Test de caminata</p>
-                        <p>Evaluación post-COVID</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/estudios/uro.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Urología</h5>
-                        <p>Cistoscopía</p>
-                        <p>Urodinamia</p>
-                        <p>Ecografía prostática</p>
-                        <p>Ecografía renal y vesical</p>
-                    </div>
-                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+            <div class="col">
+              <div class="card h-100 mx-1">
+                <img src="../images/estudios/neumo.jpg" class="card-img-top cards__estudios--img" alt="...">
+                <div class="card-body center interlineado-sm">
+                    <h3 class="h__md--underline">Neumonología</h3>
+                    <p>Espirometría</p>
+                    <p>DLCO</p>
+                    <p>Test de caminata</p>
+                    <p>Evaluación post-COVID</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-1">
+                <img src="../images/estudios/uro.jpg" class="card-img-top cards__estudios--img" alt="...">
+                <div class="card-body center interlineado-sm">
+                    <h3 class="h__md--underline">Urología</h3>
+                    <p>Cistoscopía</p>
+                    <p>Urodinamia</p>
+                    <p>Ecografía prostática</p>
+                    <p>Ecografía renal y vesical</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 mx-1">
+                  <img src="../images/estudios/otorrino.jpg" class="card-img-top cards__estudios--img" alt="...">
+                  <div class="card-body center interlineado-sm">
+                      <h3 class="h__md--underline">Otorrinolaringología</h3>
+                      <p>Otoscopía</p>
+                      <p>Potenciales auditivos</p>
+                      <p>Laringoscopía</p>
+                      <p>Rinoscopía</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 mx-1">
+                  <img src="../images/estudios/gastro.jpg" class="card-img-top cards__estudios--img" alt="...">
+                  <div class="card-body center interlineado-sm">
+                      <h3 class="h__md--underline">Gastroenterología</h3>
+                      <p>Endoscopía digestiva alta y baja</p>
+                      <p>pHmetría de 24 horas</p>
+                      <p>Test de hidrógeno en aire espirado</p>
+                      <p>Manometría esofágica</p>
+                      <p>Ecografía abdominal</p>
+                      <p>Fibroscan hepático</p>
+                  </div>
+                </div>
+              </div>
+          </div>
     </main>
 
 
@@ -349,7 +369,7 @@
                 <div class="card h-100 aside__card">
                     <img src="../images/noticias/noticia__colegio.jpg" class="card-img-top aside__imagen" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Vuelta al colegio</h5>
+                        <a href="#" class="card-title h5">Vuelta al colegio</a>
                         <p class="card-text">Consejos de salud para tu niño/a que comienza las clases</p>
                     </div>
                     <div class="card-footer">
@@ -361,7 +381,7 @@
                 <div class="card h-100 aside__card">
                     <img src="../images/noticias/noticia__macrobiot.jpg" class="card-img-top aside__imagen" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Dieta macrobiótica</h5>
+                        <a href="#" class="card-title h5">Dieta macrobiótica</a>
                         <p class="card-text">Según la cultura china, el tipo de alimentación puede ayudar a mejorar el
                             estado de ánimo dando sensación de bienestar.</p>
                     </div>
@@ -374,7 +394,7 @@
                 <div class="card h-100 aside__card d-lg-none">
                     <img src="../images/noticias/noticia__viagra.jpg" class="card-img-top aside__imagen" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Viagra para mujeres</h5>
+                        <a href="#" class="card-title h5">Viagra para mujeres</a>
                         <p class="card-text">Mitos y verdades de estos medicamentos</p>
                     </div>
                     <div class="card-footer">
@@ -386,7 +406,7 @@
                 <div class="card h-100 aside__card d-lg-none">
                   <img src="../images/noticias/noticia__mate.jpg" class="card-img-top aside__imagen" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Beneficios del mate</h5>
+                    <a href="#" class="card-title h5">Beneficios del mate</a>
                     <p class="card-text">Su consumo tiene múltiples beneficios para la salud</p>
                   </div>
                   <div class="card-footer">
@@ -403,7 +423,7 @@
             <div>
                 <h3 class="h__sm">Instituto Integral de Salud Don Bosco</h3>
                 <p class="center p__md">Don Bosco 1829 - General Roca - Río Negro</p>
-                <p class="center p__md">Teléfonos 0298 - 4425758 y 0298 - 4448923</p>
+                <p class="center p__md">Teléfono 0298 - 4425758</p>
             </div>
 
             <div>
@@ -433,7 +453,8 @@
                 </form>
 
                 <a href="#" class="fa fa-whatsapp"></a>
-                <a href="#" class="fa fa-facebook"></a>
+                <a href="mailto:institutosaluddonbosco@gmail.com" class="fa fa-envelope"></a>
+                <a href="https://www.facebook.com/Instituto-Integral-de-Salud-Don-Bosco-106121848715975" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-youtube"></a>

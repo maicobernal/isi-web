@@ -15,33 +15,20 @@
   }
   
 
-/* Carousel Especialistas */
+/* Cards Estudios Complementarios*/
 
-.carousel__size {
-  width: 300px; 
-  height:300px; 
-  margin: 0 auto;
+
+.cards__estudios--img{
+  @include bordered ($radius: 8rem, $color: $color-dark, $width: 4px);
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+  padding-bottom: 0;
+  margin: 0.5rem 1rem 0 1rem !important;
 }
 
-.carousel-inner{
-  width: 100% !important;
-  & .carousel-item {
-    height: 300px;
-  }
-}
 
-.carousel-item img {
-    position: relative;
-    max-height: 300px;
-    object-fit: contain;
-}
 
-.carousel-caption{
-  text-align: $align-center;
-  color:white;
-  font-weight: $text-bolder !important;
-  text-shadow: 2px 2px 3px $color-dark;
-}
 
 
 /*Formato tablas*/

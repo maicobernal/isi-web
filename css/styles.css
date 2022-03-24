@@ -32,6 +32,15 @@ body {
   text-align: center;
   padding: 1rem 0 1rem 0; }
 
+.h__md--underline {
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: #463f3a;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  text-decoration: underline; }
+
 .h__sm {
   font-family: "Jura", sans-serif;
   font-weight: bolder;
@@ -48,6 +57,34 @@ body {
   text-align: justify;
   padding: 0 1rem 0 1rem; }
 
+.p__md--strong {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  color: #463f3a;
+  line-height: 1.3rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem;
+  font-weight: bolder; }
+
+.p__md--italic {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  color: #463f3a;
+  line-height: 1.3rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem;
+  font-style: italic; }
+
+.p__md--strong_italic {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  color: #463f3a;
+  line-height: 1.3rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem;
+  font-weight: bolder;
+  font-style: italic; }
+
 .p__sm {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -58,6 +95,12 @@ body {
 
 .center {
   text-align: center; }
+
+.interlineado-sm {
+  line-height: 1rem; }
+
+a:link {
+  color: #463f3a; }
 
 /*Grids setteo*/
 header {
@@ -191,6 +234,10 @@ input {
   background: #25d366;
   color: white; }
 
+.fa-envelope {
+  background: #463f3a;
+  color: white; }
+
 .fa-facebook {
   background: #3B5998;
   color: white; }
@@ -217,7 +264,7 @@ input {
   width: auto;
   object-fit: cover; }
 
-.aside__card {
+.card {
   background-color: #D9E2C8; }
 
 /*Responsive layout XS celulares pequeños <576px*/
@@ -250,7 +297,9 @@ input {
     margin: 0.25rem 2rem 0.25rem 2rem;
     height: auto !important; }
   .contacto__margin {
-    margin: 0 2rem 0 2rem; } }
+    margin: 0 2rem 0 2rem; }
+  .carousel {
+    margin: 0; } }
 
 /*Responsive layout SMALL celulares medianos o portrait landscape*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -276,7 +325,9 @@ input {
     margin: 0 1rem 0 1rem; }
   .card {
     margin: 0.25rem 2rem 0.25rem 2rem;
-    height: auto !important; } }
+    height: auto !important; }
+  .carousel {
+    margin: 0; } }
 
 /*Responsive layout MEDIUM para tablets*/
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -302,9 +353,15 @@ input {
     margin: 0 1rem 0 1rem; }
   .card {
     margin: 0.25rem 1rem 0.25rem 1rem;
-    height: auto !important; } }
+    height: auto !important; }
+  .carousel {
+    margin: 0 10vw 0 10vw; } }
 
 /*Responsive layout LARGE para desktops*/
+@media screen and (min-width: 992px) {
+  .carousel {
+    margin: 0 10vw 0 10vw; } }
+
 @keyframes animation1 {
   0% {
     opacity: 0.5;
@@ -361,27 +418,16 @@ form {
     padding: 10px;
     text-align: center; }
 
-/* Carousel Especialistas */
-.carousel__size {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto; }
-
-.carousel-inner {
-  width: 100% !important; }
-  .carousel-inner .carousel-item {
-    height: 300px; }
-
-.carousel-item img {
-  position: relative;
-  max-height: 300px;
-  object-fit: contain; }
-
-.carousel-caption {
-  text-align: center;
-  color: white;
-  font-weight: bolder !important;
-  text-shadow: 2px 2px 3px black; }
+/* Cards Estudios Complementarios*/
+.cards__estudios--img {
+  border: 4px double black;
+  border-radius: 8rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+  padding-bottom: 0;
+  margin: 0.5rem 1rem 0 1rem !important; }
 
 /*Formato tablas*/
 table {
@@ -393,3 +439,28 @@ caption {
   font-size: 1.3rem;
   font-family: "Lato", sans-serif;
   font-weight: bolder; }
+
+.carousel-control-next,
+.carousel-control-prev, .carousel-indicators {
+  filter: invert(100%); }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 8vw;
+  padding: 20vw 0 20vw 0; }
+
+.carousel-indicators {
+  margin-bottom: 3rem; }
+
+.form__recetas {
+  text-align: center; }
+
+.btn-primary {
+  background-color: #219ebc;
+  border-color: #219ebc; }
+  .btn-primary:focus {
+    background-color: #7f5539;
+    border-color: #7f5539; }
+  .btn-primary:hover {
+    background-color: #e63946;
+    border-color: #e63946; }

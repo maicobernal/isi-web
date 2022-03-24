@@ -149,6 +149,7 @@
 
    $socialmedia__btn:(
      whatsapp: #25d366,
+     envelope: #463f3a,
      facebook: #3B5998,
      twitter: #55ACEE,
      linkedin: #007bb5,
@@ -171,7 +172,7 @@
     object-fit: cover;
   }
   
-  .aside__card{
+  .card{
     background-color: $color-aside;
     
   }
@@ -229,6 +230,10 @@
         .contacto__margin{
           margin: 0 $space-md 0 $space-md;
         }
+
+        .carousel{
+          margin: 0;
+      }
   
     }
   
@@ -269,6 +274,10 @@
         .card{
           margin: $space-xxs $space-md $space-xxs $space-md;
           height: auto !important;
+        }
+
+        .carousel{
+          margin: 0;
         }
   
     }
@@ -311,10 +320,17 @@
             margin: $space-xxs $space-sm $space-xxs $space-sm;
             height: auto !important;
           }
+
+          .carousel{
+            margin: 0 10vw 0 10vw;
+          }
     
       }
   
           /*Responsive layout LARGE para desktops*/
           @media screen and (min-width: 992px) { 
         
+            .carousel{
+              margin: 0 10vw 0 10vw;
+          } 
           }

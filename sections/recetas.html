@@ -65,7 +65,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="recetas.html">Recetas y Turnos</a>
+                  <a class="nav-link active" href="recetas.html">Solicitud de Recetas</a>
                 </li>
                 <li class="nav-item"> 
                   <a class="nav-link"href="contacto.html">Contacto</a>
@@ -78,17 +78,87 @@
     
     <main>
         <h2 class="h__md">Solicitud de recetas</h2>
-        <p class="p__md">Desde inicio de la pandemia y con el propósito de agilizar y garantizar una continuidad en los tratamientos médicos de nuestros pacientes hemos <img class="main__imagen--derecha animation1" src="../images/recetas.jpg" width = "400px" alt="Comer  sano fuera de casa"> establecido un sistema de confección de recetas online para pacientes bajo tratamiento farmacológico crónico. Para ello puede comunicarse a través de nuestras redes sociales, a través de la seccíon Contacto en nuestro sitio web, o por Whatsapp. Recuerde que esta modalidad de confección de recetas aplica solamente para medicamentos que ya hayan sido prescriptos en consultas médicas previas y que son de uso crónico.</p>
-        
-        <strong><p class="p__md">Teléfono: 2984 425758</p></strong>
-        <strong><p class="p__md">Whatsapp: <a href="https://wa.me/5492984555987?text=Hola!%20Me%20gustar%C3%ADa%20renovar%20mis%20recetas%20para%20los%20siguientes%20medicamentos%20que%20me%20prescribi%C3%B3%20el%2Fla%20Dr%2Fa.">2984 555987</a></p></strong>
-        <strong><p class="p__md">Email: <a href="mailto:institutodonbosco@fibertel.com.ar">institutodonbosco@fibertel.com.ar</a></p></strong>
-        <strong><p class="p__md">Horario de atención: Lunes a Viernes de 9 y a 17hs</p></strong>
 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3 class="h__sm">Términos y condiciones</h3>
+              <p class="p__md--strong">Este servicio es exclusivo para pacientes que estén en tratamiento en el Instituto Integral de Salud.</p>
+              <p class="p__md--strong_italic">La confección de la receta solicitada, constituye un Acto Médico.</p>
+              <p class="p__md">El profesional evaluará y decidirá, en función de los datos registrados en su Historia Clínica, la prescripción de lo solicitado.</p>
+              <p class="p__md">La recepción de este pedido, no garantiza la confección de la misma por parte del médico.</p>
+              <p class="p__md">Se le brindará una respuesta al mail indicado, sobre el estado de su solicitud.</p>
+              <p class="p__md">Se tendrá en cuenta sus antecedentes y cuándo fue la última consulta presencial que realizó en el Instituto.</p>
+              <p class="p__md">Deben ser medicamentos exclusivos para su uso personal de patologías crónicas o habituales.</p>
+              <p class="p__md--strong_italic">Medicamentos para patologías agudas requieren de una consulta médica previa (sea presencial o virtual).</p>
+
+            </div>
+            <div class="col">
+              <form class="row g-3 justify-content-evenly">
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label form__recetas">Nombre y apellido</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label form__recetas">Telefono de contacto</label>
+                  <input type="text" class="form-control" id="validationDefault02" value="" required>
+                </div>
+                <div class="row g-3 justify-content-evenly">
+                <div class="col-md-4">
+                  <label for="exampleFormControlInput1" class="form-label form__recetas">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
+                </div>
+                <div class="col-md-4">
+                  <label for="exampleFormControlInput1" class="form-label form__recetas">DNI o documento</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+              <div class="row g-3 justify-content-evenly">
+                <div class="col-md-4">
+                  <label for="exampleFormControlInput1" class="form-label form__recetas">Obra social</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="col-md-4">
+                  <label for="exampleFormControlInput1" class="form-label form__recetas">Número de socio</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                </div>
+                
+                <div class="col-md-8 justify-content-around">
+                  <label for="exampleFormControlTextarea1" class="form-label form__recetas">Ingrese medicamentos</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <div id="formHelpBlock" class="form-text">
+                    Incluya nombre genérico, marca, cantidad de comprimidos, presentación (compromidos, capsulas, etc) y cantidad de envases. 
+                  </div>
+                </div>
+              
+                <div class="col-12 justify-content-around">
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Enviar</button>
+                  <button class="btn btn-secondary" type="reset">Limpiar</button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tiempo de respuesta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Su consulta será revisada por nuestro personal y obtendrá una respuesta en las próximas 72 horas hábiles.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Cancelar</button>
+                        <button type="button" class="btn btn-primary">De acuerdo</button>
+                      </div>
+                    </div>
+                  </div>
+              </form>
+            </div>
+            </div>
+        </div>
+        
         <h2 class="h__md">Solicitud de turnos</h2>
-        <p class="p__md">Podrá solicitar el turno con su especialista de forma telefónica y a través de Whatsapp. Próximamente se habilitará la gestión de turnos de forma completamente online a través del sitio web.</p>
-        <strong><p class="p__md">Teléfono: 2984 425758</p></strong>
-        <strong><p class="p__md">Whatsapp: <a href="https://wa.me/5492984555987?text=Hola!%20Me%20gustar%C3%ADa%20solicitar%20un%20turno%20con%20el%2Fla%20profesional%20">2984 555987</a></p></strong>
+        <p class="p__md center">Podrá solicitar el turno con su especialista de forma telefónica y a través de Whatsapp. </p> <p class="p__md--italic center">Próximamente se habilitará la gestión de turnos de forma completamente online a través del sitio web.</p>
+        
     </main>    
 
     <aside>
@@ -98,7 +168,7 @@
               <div class="card h-100 aside__card">
                   <img src="../images/noticias/noticia__colegio.jpg" class="card-img-top aside__imagen" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Vuelta al colegio</h5>
+                    <a href="#" class="card-title h5">Vuelta al colegio</a>
                       <p class="card-text">Consejos de salud para tu niño/a que comienza las clases</p>
                   </div>
                   <div class="card-footer">
@@ -110,7 +180,7 @@
               <div class="card h-100 aside__card">
                   <img src="../images/noticias/noticia__macrobiot.jpg" class="card-img-top aside__imagen" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Dieta macrobiótica</h5>
+                    <a href="#" class="card-title h5">Dieta macrobiótica</a>
                       <p class="card-text">Según la cultura china, el tipo de alimentación puede ayudar a mejorar el
                           estado de ánimo dando sensación de bienestar.</p>
                   </div>
@@ -123,7 +193,7 @@
               <div class="card h-100 aside__card d-lg-none">
                   <img src="../images/noticias/noticia__viagra.jpg" class="card-img-top aside__imagen" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">Viagra para mujeres</h5>
+                    <a href="#" class="card-title h5">Viagra para mujeres</a>
                       <p class="card-text">Mitos y verdades de estos medicamentos</p>
                   </div>
                   <div class="card-footer">
@@ -135,7 +205,7 @@
               <div class="card h-100 aside__card d-lg-none">
                 <img src="../images/noticias/noticia__mate.jpg" class="card-img-top aside__imagen" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Beneficios del mate</h5>
+                  <a href="#" class="card-title h5">Beneficios del mate</a>
                   <p class="card-text">Su consumo tiene múltiples beneficios para la salud</p>
                 </div>
                 <div class="card-footer">
@@ -151,7 +221,7 @@
           <div>
             <h3 class="h__sm">Instituto Integral de Salud Don Bosco</h3>
             <p class="p__md center">Don Bosco 1829 - General Roca - Río Negro</p>
-            <p class="p__md center">Teléfonos 0298 - 4425758 y 0298 - 4448923</p>
+            <p class="p__md center">Teléfono 0298 - 4425758</p>
           </div>
     
           <div>
@@ -181,7 +251,8 @@
             </form>
     
             <a href="#" class="fa fa-whatsapp"></a>
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="mailto:institutosaluddonbosco@gmail.com" class="fa fa-envelope"></a>
+            <a href="https://www.facebook.com/Instituto-Integral-de-Salud-Don-Bosco-106121848715975" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-youtube"></a>
