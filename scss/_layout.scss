@@ -92,6 +92,16 @@
     @include bordered ($color: $color-border-regular)
   }
 
+  .main__imagen--front {
+    height: 20vw;
+    width:100%;
+    object-fit: cover;
+  }
+  .main__imagen--main {
+    @include bordered ($color: $color-border-regular);
+    margin-left: 0;
+  }
+
   .main__imagen--small {
     float:right;
     height:9rem;
@@ -104,9 +114,23 @@
     width: 560px;
     height: 315px; 
     padding-bottom: $space-xs;
+    padding-top: $space-xs;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .main__card{
+    
+    height: 100%;
+    display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+    @extend .interlineado-sm;
+    @extend .center;
+    }
+  
+ 
+
 
     /* Footer FlexBox*/
     .flex__footer {
@@ -137,7 +161,7 @@
 
    .fa {
     padding: $space-xs;
-    font-size: $font-h-lg*1.3;
+    font-size: $font-h-lg*1.2;
     width: 3rem;
     text-align: $align-center;
     text-decoration: none;
@@ -162,7 +186,14 @@
        color: white;
      }
    }
-    
+  
+   .fa-brands {
+    font-size: $font-h-lg*2.2;
+    width: 2rem;
+    opacity: 0.8;
+    text-align: $align-center;
+    text-decoration: none;
+    }
 
   /* Formato aside bootstrap */
   

@@ -29,8 +29,17 @@ body {
   @include title;
 }
 
+.h__xs {
+  @include title ($size:$font-h-sm);
+}
+
 .p__md {
   @include text ($size: $font-p-md, $interlineado: 1.3rem);
+}
+
+.p__xl--strong {
+  @include text ($size: $font-p-xl, $interlineado: 1.3rem);
+  font-weight: $text-bolder;
 }
 
 .p__md--strong {
@@ -61,6 +70,19 @@ body {
   line-height: $text-interlineado-sm;
 }
 
+
+
 a:link {
   color: $color-text;
+}
+
+.carousel-caption{
+  @extend .p__xl--strong;
+  @extend .center;
+  font-size: $font-p-xl*1.2;
+  line-height: $space-md;
+  color:white;
+  text-shadow: 3px 3px black;
+  bottom: 6rem !important;
+
 }

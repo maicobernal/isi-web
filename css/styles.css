@@ -49,6 +49,14 @@ body {
   text-align: center;
   padding: 1rem 0 1rem 0; }
 
+.h__xs {
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: #463f3a;
+  text-align: center;
+  padding: 1rem 0 1rem 0; }
+
 .p__md {
   font-family: "Lato", sans-serif;
   font-size: 1.1rem;
@@ -56,6 +64,15 @@ body {
   line-height: 1.3rem;
   text-align: justify;
   padding: 0 1rem 0 1rem; }
+
+.p__xl--strong, .carousel-caption {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  color: #463f3a;
+  line-height: 1.3rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem;
+  font-weight: bolder; }
 
 .p__md--strong {
   font-family: "Lato", sans-serif;
@@ -93,14 +110,21 @@ body {
   text-align: justify;
   padding: 0 1rem 0 1rem; }
 
-.center {
+.center, .carousel-caption, .main__card {
   text-align: center; }
 
-.interlineado-sm {
+.interlineado-sm, .main__card {
   line-height: 1rem; }
 
 a:link {
   color: #463f3a; }
+
+.carousel-caption {
+  font-size: 1.56rem;
+  line-height: 2rem;
+  color: white;
+  text-shadow: 3px 3px black;
+  bottom: 6rem !important; }
 
 /*Grids setteo*/
 header {
@@ -180,6 +204,17 @@ footer {
   border-radius: 1rem;
   margin: 0.5rem 0 0.5rem 0.5rem; }
 
+.main__imagen--front {
+  height: 20vw;
+  width: 100%;
+  object-fit: cover; }
+
+.main__imagen--main {
+  border: 0.5rem double #463f3a;
+  border-radius: 1rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin-left: 0; }
+
 .main__imagen--small {
   float: right;
   height: 9rem;
@@ -193,8 +228,15 @@ footer {
   width: 560px;
   height: 315px;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   margin-left: auto;
   margin-right: auto; }
+
+.main__card {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; }
 
 /* Footer FlexBox*/
 .flex__footer {
@@ -221,7 +263,7 @@ input {
 /*Botones redes sociales*/
 .fa {
   padding: 0.5rem;
-  font-size: 1.95rem;
+  font-size: 1.8rem;
   width: 3rem;
   text-align: center;
   text-decoration: none;
@@ -257,6 +299,13 @@ input {
 .fa-instagram {
   background: #125688;
   color: white; }
+
+.fa-brands {
+  font-size: 3.3rem;
+  width: 2rem;
+  opacity: 0.8;
+  text-align: center;
+  text-decoration: none; }
 
 /* Formato aside bootstrap */
 .aside__imagen {
@@ -399,7 +448,7 @@ form {
 .form-label {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
-  color: color-dark !important;
+  color: black !important;
   line-height: 1rem;
   text-align: justify;
   padding: 0 1rem 0 1rem;

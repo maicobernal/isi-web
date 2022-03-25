@@ -5,6 +5,6 @@
   }
 
   .form-label{
-    @include text ($color: color-dark !important);
+    @include text ($color: $color-dark !important);
     font-weight: $text-bold !important;
   }
