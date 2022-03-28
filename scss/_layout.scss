@@ -243,6 +243,11 @@
    .carousel {
      margin: 0;
    }
+
+   .map__responsive{
+     width: 300px;
+     height: 225px;
+   }
  }
 
  /*Responsive layout SMALL celulares medianos o portrait landscape*/
@@ -280,7 +285,12 @@
    .carousel {
      margin: 0;
    }
- }
+
+   .map__responsive{
+    width: 300px;
+    height: 225px;
+   }
+}
 
  /*Responsive layout MEDIUM para tablets*/
  @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -323,7 +333,12 @@
    .carousel {
      margin: 0 10vw 0 10vw;
    }
- }
+   .map__responsive{
+    width: 600px;
+    height: 450px;
+  }
+}
+ 
 
  /*Responsive layout LARGE para desktops*/
  @media screen and (min-width: 992px) {
@@ -335,4 +350,8 @@
    .carousel {
      margin: 0 10vw 0 10vw;
    }
+   .map__responsive{
+    width: 600px;
+    height: 450px;
+  }
  }

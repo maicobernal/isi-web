@@ -341,7 +341,10 @@ input {
     margin: 0.25rem 2rem 0.25rem 2rem;
     height: auto !important; }
   .carousel {
-    margin: 0; } }
+    margin: 0; }
+  .map__responsive {
+    width: 300px;
+    height: 225px; } }
 
 /*Responsive layout SMALL celulares medianos o portrait landscape*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -367,7 +370,10 @@ input {
     margin: 0.25rem 2rem 0.25rem 2rem;
     height: auto !important; }
   .carousel {
-    margin: 0; } }
+    margin: 0; }
+  .map__responsive {
+    width: 300px;
+    height: 225px; } }
 
 /*Responsive layout MEDIUM para tablets*/
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -400,7 +406,10 @@ input {
     margin: 0.25rem 1rem 0.25rem 1rem;
     height: auto !important; }
   .carousel {
-    margin: 0 10vw 0 10vw; } }
+    margin: 0 10vw 0 10vw; }
+  .map__responsive {
+    width: 600px;
+    height: 450px; } }
 
 /*Responsive layout LARGE para desktops*/
 @media screen and (min-width: 992px) {
@@ -411,7 +420,10 @@ input {
     max-width: 100%;
     height: auto; }
   .carousel {
-    margin: 0 10vw 0 10vw; } }
+    margin: 0 10vw 0 10vw; }
+  .map__responsive {
+    width: 600px;
+    height: 450px; } }
 
 @keyframes animation1 {
   0% {
