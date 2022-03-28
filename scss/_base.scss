@@ -66,6 +66,19 @@ body {
   text-align: $align-center;
 }
 
+.center__object{
+  align-items: center !important;
+  justify-content: center !important;
+  
+  text-align: center;
+}
+
+.center__map{
+  margin-right: auto;
+  margin-left: auto;
+  display:block;
+}
+
 .interlineado-sm{
   line-height: $text-interlineado-sm;
 }
@@ -83,6 +96,6 @@ a:link {
   line-height: $space-md;
   color:white;
   text-shadow: 3px 3px black;
-  bottom: 6rem !important;
+  
 
 }

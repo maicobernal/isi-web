@@ -113,6 +113,16 @@ body {
 .center, .carousel-caption, .main__card {
   text-align: center; }
 
+.center__object {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center; }
+
+.center__map {
+  margin-right: auto;
+  margin-left: auto;
+  display: block; }
+
 .interlineado-sm, .main__card {
   line-height: 1rem; }
 
@@ -123,8 +133,7 @@ a:link {
   font-size: 1.56rem;
   line-height: 2rem;
   color: white;
-  text-shadow: 3px 3px black;
-  bottom: 6rem !important; }
+  text-shadow: 3px 3px black; }
 
 /*Grids setteo*/
 header {
@@ -205,15 +214,16 @@ footer {
   margin: 0.5rem 0 0.5rem 0.5rem; }
 
 .main__imagen--front {
-  height: 20vw;
-  width: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  border: 0.5rem double #463f3a;
+  border-radius: 0;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  border: solid; }
 
 .main__imagen--main {
   border: 0.5rem double #463f3a;
   border-radius: 1rem;
-  margin: 0.5rem 0 0.5rem 0.5rem;
-  margin-left: 0; }
+  margin: 0.5rem 0 0.5rem 0.5rem; }
 
 .main__imagen--small {
   float: right;
@@ -225,12 +235,12 @@ footer {
 
 .main__video {
   display: block;
-  width: 560px;
-  height: 315px;
+  width: 500px;
+  height: 230px;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: auto auto auto auto;
+  padding: 0 2rem 0 2rem; }
 
 .main__card {
   height: 100%;
@@ -334,8 +344,6 @@ input {
     background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1);
     padding: 1rem; }
   .main__video {
-    width: 400px;
-    height: max-content;
     margin: 0.25rem 2rem 0.25rem 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -400,14 +408,29 @@ input {
     font-weight: bolder; }
   .contacto__margin {
     margin: 0 1rem 0 1rem; }
+  .main__imagen--main {
+    border: 0.5rem double #463f3a;
+    border-radius: 1rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    max-width: 100%;
+    height: auto;
+    margin: 3 rem; }
   .card {
     margin: 0.25rem 1rem 0.25rem 1rem;
     height: auto !important; }
   .carousel {
-    margin: 0 10vw 0 10vw; } }
+    margin: 0 10vw 0 10vw; }
+  .no-margin {
+    margin: 0 1rem 0 1rem; } }
 
 /*Responsive layout LARGE para desktops*/
 @media screen and (min-width: 992px) {
+  .main__imagen--main {
+    border: 0.5rem double #463f3a;
+    border-radius: 1rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    max-width: 100%;
+    height: auto; }
   .carousel {
     margin: 0 10vw 0 10vw; } }
 

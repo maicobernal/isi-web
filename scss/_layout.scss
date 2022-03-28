@@ -93,13 +93,13 @@
   }
 
   .main__imagen--front {
-    height: 20vw;
-    width:100%;
     object-fit: cover;
+    @include bordered ($color: $color-border-regular, $width: $space-xs, $radius: 0);
+    border: solid;
   }
   .main__imagen--main {
     @include bordered ($color: $color-border-regular);
-    margin-left: 0;
+    
   }
 
   .main__imagen--small {
@@ -111,12 +111,12 @@
 
   .main__video{
     display: block;
-    width: 560px;
-    height: 315px; 
+    width: 500px;
+    height: 230px;
     padding-bottom: $space-xs;
     padding-top: $space-xs;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto auto auto;
+    padding: 0 2rem 0 2rem;
   }
 
   .main__card{
@@ -241,8 +241,7 @@
         }
   
         .main__video{
-          width: 400px;
-          height: max-content;
+          
           margin: $space-xxs $space-md $space-xxs $space-md;
           margin-left: auto;
           margin-right: auto;
@@ -252,6 +251,8 @@
         .main__imagen--derecha{
           height: 11rem;
         }
+        
+
   
         .card{
           margin: $space-xxs $space-md $space-xxs $space-md;
@@ -347,6 +348,12 @@
             margin: 0 $space-sm 0 $space-sm;
           }
           
+          .main__imagen--main {
+            @include bordered ($color: $color-border-regular);
+            max-width: 100%;
+            height: auto;
+            margin: 3 rem;
+          }
           .card{
             margin: $space-xxs $space-sm $space-xxs $space-sm;
             height: auto !important;
@@ -355,12 +362,23 @@
           .carousel{
             margin: 0 10vw 0 10vw;
           }
+
+          .no-margin{
+            margin: 0 1rem 0 1rem;
+          }
     
       }
   
           /*Responsive layout LARGE para desktops*/
           @media screen and (min-width: 992px) { 
         
+
+            .main__imagen--main {
+              @include bordered ($color: $color-border-regular);
+              max-width: 100%;
+              height: auto;
+              
+            }
             .carousel{
               margin: 0 10vw 0 10vw;
           } 
