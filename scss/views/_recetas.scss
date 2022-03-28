@@ -1,14 +1,4 @@
-.form__recetas{
-    text-align: $align-center;
-  }
+.form__recetas {
+  text-align: $align-center;
+}
 
-  .btn-primary{
-    background-color: $color-button;
-    border-color: $color-button;
-    &:focus{
-      background-color: $color-button3;
-      border-color: $color-button3;}
-      &:hover{
-        background-color: $color-button2;
-        border-color: $color-button2;}
-  }

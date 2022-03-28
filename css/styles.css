@@ -3,13 +3,13 @@
 /*Tipografia*/
 /*Tamaño fuentes*/
 /*Interlineado*/
-/*Alineacion cosas*/
+/*Alineacion*/
 /*Estilos textos*/
 /*Espaciado*/
 /*Mixins*/
 /*Border para imagenes*/
 /*Estilos de fuentes - por default tamaño mas chico*/
-/*Map para caption - ejemplo para consigna*/
+/*Map para caption*/
 /*Basics*/
 * {
   margin: 0;
@@ -24,6 +24,22 @@ body {
   background-image: linear-gradient(to bottom right, #fffcf7, #c9d6b1); }
 
 /*Formato texto basico*/
+.h__xs {
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: #463f3a;
+  text-align: center;
+  padding: 1rem 0 1rem 0; }
+
+.h__sm {
+  font-family: "Jura", sans-serif;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: #463f3a;
+  text-align: center;
+  padding: 1rem 0 1rem 0; }
+
 .h__md {
   font-family: "Jura", sans-serif;
   font-weight: bolder;
@@ -41,21 +57,13 @@ body {
   padding: 1rem 0 1rem 0;
   text-decoration: underline; }
 
-.h__sm {
-  font-family: "Jura", sans-serif;
-  font-weight: bolder;
-  font-size: 1.3rem;
+.p__sm {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
   color: #463f3a;
-  text-align: center;
-  padding: 1rem 0 1rem 0; }
-
-.h__xs {
-  font-family: "Jura", sans-serif;
-  font-weight: bolder;
-  font-size: 1.3rem;
-  color: #463f3a;
-  text-align: center;
-  padding: 1rem 0 1rem 0; }
+  line-height: 1rem;
+  text-align: justify;
+  padding: 0 1rem 0 1rem; }
 
 .p__md {
   font-family: "Lato", sans-serif;
@@ -64,15 +72,6 @@ body {
   line-height: 1.3rem;
   text-align: justify;
   padding: 0 1rem 0 1rem; }
-
-.p__xl--strong, .carousel-caption {
-  font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
-  color: #463f3a;
-  line-height: 1.3rem;
-  text-align: justify;
-  padding: 0 1rem 0 1rem;
-  font-weight: bolder; }
 
 .p__md--strong {
   font-family: "Lato", sans-serif;
@@ -102,15 +101,16 @@ body {
   font-weight: bolder;
   font-style: italic; }
 
-.p__sm {
+.p__xl--strong {
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #463f3a;
-  line-height: 1rem;
+  line-height: 1.3rem;
   text-align: justify;
-  padding: 0 1rem 0 1rem; }
+  padding: 0 1rem 0 1rem;
+  font-weight: bolder; }
 
-.center, .carousel-caption, .main__card {
+.center {
   text-align: center; }
 
 .center__object {
@@ -123,17 +123,21 @@ body {
   margin-left: auto;
   display: block; }
 
-.interlineado-sm, .main__card {
+.interlineado-sm {
   line-height: 1rem; }
 
 a:link {
   color: #463f3a; }
 
-.carousel-caption {
-  font-size: 1.56rem;
-  line-height: 2rem;
-  color: white;
-  text-shadow: 3px 3px black; }
+.btn-primary {
+  background-color: #219ebc;
+  border-color: #219ebc; }
+  .btn-primary:focus {
+    background-color: #7f5539;
+    border-color: #7f5539; }
+  .btn-primary:hover {
+    background-color: #e63946;
+    border-color: #e63946; }
 
 /*Grids setteo*/
 header {
@@ -199,20 +203,12 @@ footer {
   font-family: "Lato", sans-serif;
   color: black !important; }
 
-/* Make head of dropdown link clickable in navbar */
+/*Dropdown link clickable in navbar */
 /* Also remove data-bs-toogle on html */
 .dropdown:hover .dropdown-menu {
   display: block !important; }
 
 /*Formato imagenes*/
-.main__imagen--derecha {
-  float: right;
-  height: 15rem;
-  width: auto;
-  border: 0.5rem double #463f3a;
-  border-radius: 1rem;
-  margin: 0.5rem 0 0.5rem 0.5rem; }
-
 .main__imagen--front {
   object-fit: cover;
   border: 0.5rem double #463f3a;
@@ -220,16 +216,8 @@ footer {
   margin: 0.5rem 0 0.5rem 0.5rem;
   border: solid; }
 
-.main__imagen--main {
+.main__imagen--news {
   border: 0.5rem double #463f3a;
-  border-radius: 1rem;
-  margin: 0.5rem 0 0.5rem 0.5rem; }
-
-.main__imagen--small {
-  float: right;
-  height: 9rem;
-  width: auto;
-  border: 0.5rem double #738290;
   border-radius: 1rem;
   margin: 0.5rem 0 0.5rem 0.5rem; }
 
@@ -241,12 +229,6 @@ footer {
   padding-top: 0.5rem;
   margin: auto auto auto auto;
   padding: 0 2rem 0 2rem; }
-
-.main__card {
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal; }
 
 /* Footer FlexBox*/
 .flex__footer {
@@ -263,11 +245,13 @@ footer {
     padding: 0.5rem;
     text-align: center;
     color: black !important; }
-    .flex__footer div a, .flex__footer div h3, .flex__footer div p, .flex__footer div label {
+    .flex__footer div a,
+    .flex__footer div h3,
+    .flex__footer div p,
+    .flex__footer div label {
       color: black; }
 
 input {
-  /* centra el placeholder */
   text-align: center; }
 
 /*Botones redes sociales*/
@@ -332,6 +316,11 @@ input {
     flex-direction: column; }
   .header__titulo {
     display: none; }
+  .header__logo {
+    height: 10rem;
+    width: auto;
+    float: left;
+    box-sizing: border-box; }
   .header__banner {
     justify-content: center; }
   .flex__esp {
@@ -348,13 +337,9 @@ input {
     margin-left: auto;
     margin-right: auto;
     display: block; }
-  .main__imagen--derecha {
-    height: 11rem; }
   .card {
     margin: 0.25rem 2rem 0.25rem 2rem;
     height: auto !important; }
-  .contacto__margin {
-    margin: 0 2rem 0 2rem; }
   .carousel {
     margin: 0; } }
 
@@ -378,8 +363,6 @@ input {
     color: #463f3a;
     font-size: 2rem;
     font-weight: bolder; }
-  .contacto__margin {
-    margin: 0 1rem 0 1rem; }
   .card {
     margin: 0.25rem 2rem 0.25rem 2rem;
     height: auto !important; }
@@ -406,8 +389,6 @@ input {
     color: #463f3a;
     font-size: 1.95rem;
     font-weight: bolder; }
-  .contacto__margin {
-    margin: 0 1rem 0 1rem; }
   .main__imagen--main {
     border: 0.5rem double #463f3a;
     border-radius: 1rem;
@@ -419,9 +400,7 @@ input {
     margin: 0.25rem 1rem 0.25rem 1rem;
     height: auto !important; }
   .carousel {
-    margin: 0 10vw 0 10vw; }
-  .no-margin {
-    margin: 0 1rem 0 1rem; } }
+    margin: 0 10vw 0 10vw; } }
 
 /*Responsive layout LARGE para desktops*/
 @media screen and (min-width: 992px) {
@@ -486,8 +465,7 @@ form {
   flex-wrap: wrap;
   justify-content: space-around; }
   .flex__esp div {
-    margin: 10px;
-    padding: 10px;
+    padding: 1rem 0 0 0;
     text-align: center; }
 
 /* Cards Estudios Complementarios*/
@@ -495,7 +473,7 @@ form {
   border: 4px double black;
   border-radius: 8rem;
   margin: 0.5rem 0 0.5rem 0.5rem;
-  height: 150px;
+  height: 10rem;
   width: auto;
   object-fit: cover;
   padding-bottom: 0;
@@ -512,8 +490,10 @@ caption {
   font-family: "Lato", sans-serif;
   font-weight: bolder; }
 
+/* Formato botones carousel */
 .carousel-control-next,
-.carousel-control-prev, .carousel-indicators {
+.carousel-control-prev,
+.carousel-indicators {
   filter: invert(100%); }
 
 .carousel-control-next-icon,
@@ -526,13 +506,3 @@ caption {
 
 .form__recetas {
   text-align: center; }
-
-.btn-primary {
-  background-color: #219ebc;
-  border-color: #219ebc; }
-  .btn-primary:focus {
-    background-color: #7f5539;
-    border-color: #7f5539; }
-  .btn-primary:hover {
-    background-color: #e63946;
-    border-color: #e63946; }
