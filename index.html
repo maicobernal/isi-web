@@ -37,9 +37,6 @@
   <script>
     scr = "js/wow.min.js"
   </script>
-  <script>
-    new WOW().init();
-  </script>
 
   <header>
     <div class="header__banner">
@@ -107,7 +104,7 @@
     </div>
     </div>
     <div class="container-fluid">
-      <div class="row row-cols-md-2 row-cols-lg-2 row-cols-sm-1 row-cols-1 align-items-center">
+      <div class="row row-cols-md-2 row-cols-lg-2 row-cols-sm-1 row-cols-1 align-items-center d-none">
         <div class="col">
           <h2 class="h__md pe-1">Novedades: Nutrición basada en plantas</h2>
           <p class="p__md pr-1"> Nuestro objetivo es ayudarte a planificar una alimentación plant-based, vegetariana o
@@ -163,10 +160,10 @@
           <img src="./images/noticias/noticia__colegio.jpg" class="card-img-top aside__imagen" alt="...">
           <div class="card-body">
             <a href="#" class="card-title h5">Vuelta al colegio</a>
-            <p class="card-text">Consejos de salud para tu niño/a que comienza las clases</p>
+            <p class="card-text">Haga click para obtener más información</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">12-01-22</small>
+            <!-- <small class="text-muted">12-01-22</small> -->
           </div>
         </div>
       </div>
@@ -175,11 +172,10 @@
           <img src="./images/noticias/noticia__macrobiot.jpg" class="card-img-top aside__imagen" alt="...">
           <div class="card-body">
             <a href="#" class="card-title h5">Dieta macrobiótica</a>
-            <p class="card-text">Según la cultura china, el tipo de alimentación puede ayudar a mejorar el estado de
-              ánimo dando sensación de bienestar.</p>
+            <p class="card-text">Haga click para obtener más información</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">08-01-22</small>
+            <!-- <small class="text-muted">08-01-22</small> -->
           </div>
         </div>
       </div>
@@ -188,10 +184,10 @@
           <img src="./images/noticias/noticia__viagra.jpg" class="card-img-top aside__imagen" alt="...">
           <div class="card-body">
             <a href="#" class="card-title h5">Viagra para mujeres</a>
-            <p class="card-text">Mitos y verdades de estos medicamentos</p>
+            <p class="card-text">Haga click para obtener más información</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">04-01-22</small>
+            <!-- <small class="text-muted">04-01-22</small> -->
           </div>
         </div>
       </div>
@@ -200,10 +196,10 @@
           <img src="./images/noticias/noticia__mate.jpg" class="card-img-top aside__imagen" alt="...">
           <div class="card-body">
             <a href="#" class="card-title h5">Beneficios del mate</a>
-            <p class="card-text">Su consumo tiene múltiples beneficios para la salud</p>
+            <p class="card-text">Haga click para obtener más información</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">27-12-21</small>
+            <!-- <small class="text-muted">27-12-21</small> -->
           </div>
         </div>
       </div>
@@ -244,7 +240,7 @@
         <form>
           <label for="newsletter">Suscribase al newsletter:</label>
           <input type="email" name="newsletter" placeholder="nombre@gmail.com">
-          <input type="submit" value="Suscribirse">
+          <input type="button" value="Suscribirse">
         </form>
 
         <a href="https://wa.me/2984345202?text=Hola!%20Me%20gustar%C3%ADa%20solicitar%20un%20turno%20con%20un%20especialista%20del%20centro.%20" class="fa fa-whatsapp"></a>
@@ -262,7 +258,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
-
+  <script src="./js/newsfeed.js">
+  </script>
 </body>
 
 </html>
